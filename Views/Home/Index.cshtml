@@ -4,7 +4,7 @@
 <h1>Conversor de Moneda</h1>
 <form asp-action="Convertir" method="post">
     <label>Envías:</label>
-    <input type="number" name="cantidad" step="0.01" required />
+    <input type="number" name="cantidad" step="0.01" required /><br><br>
 
     <label>Origen:</label>
     <select name="origen">
@@ -12,7 +12,7 @@
         {
             <option value="@moneda">@moneda</option>
         }
-    </select>
+    </select><br><br>
 
     <label>Recibes:</label>
     <select name="destino">
@@ -20,9 +20,9 @@
         {
             <option value="@moneda">@moneda</option>
         }
-    </select>
+    </select><br><br>
 
-    <button type="submit">Hacer Cambio</button>
+    <button type="submit">Hacer Cambio</button><br><br>
 </form>
 
 @if (ViewBag.Resultado != null)
