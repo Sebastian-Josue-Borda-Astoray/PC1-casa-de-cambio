@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Datos Personales";
+}
+<h1>Ingrese sus datos</h1>
+<form asp-action="GenerarBoleta" method="post">
+    <label>Nombre:</label>
+    <input type="text" name="nombre" required />
+
+    <label>DNI:</label>
+    <input type="text" name="dni" required />
+
+    <button type="submit">Generar Boleta</button>
+</form>
