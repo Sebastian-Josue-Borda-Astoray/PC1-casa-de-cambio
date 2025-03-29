@@ -1,8 +1,33 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Casa de Cambio";
 }
+<h1>Conversor de Moneda</h1>
+<form asp-action="Convertir" method="post">
+    <label>Envías:</label>
+    <input type="number" name="cantidad" step="0.01" required />
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <label>Origen:</label>
+    <select name="origen">
+        @foreach (var moneda in ViewBag.Monedas)
+        {
+            <option value="@moneda">@moneda</option>
+        }
+    </select>
+
+    <label>Recibes:</label>
+    <select name="destino">
+        @foreach (var moneda in ViewBag.Monedas)
+        {
+            <option value="@moneda">@moneda</option>
+        }
+    </select>
+
+    <button type="submit">Hacer Cambio</button>
+</form>
+
+@if (ViewBag.Resultado != null)
+{
+    <p>Enviaste: @ViewBag.Cantidad @ViewBag.Origen</p>
+    <p>Recibes: @ViewBag.Resultado @ViewBag.Destino</p>
+    <a href="/Boleta/Index">Generar Boleta</a>
+}
