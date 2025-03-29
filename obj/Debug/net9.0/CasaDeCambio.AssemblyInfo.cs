@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CasaDeCambio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1d15a5020cefb8e3d0597028bcf9e4345c274cb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18ffd8be0498a168e4966f006a1ce8fdc866233a")]
 [assembly: System.Reflection.AssemblyProductAttribute("CasaDeCambio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CasaDeCambio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
